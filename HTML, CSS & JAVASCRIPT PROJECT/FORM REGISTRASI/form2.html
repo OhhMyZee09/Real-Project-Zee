@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Zee Validation</h1>
+    <p id="description">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique rerum perspiciatis sed ad quia labore necessitatibus culpa impedit ipsam vitae accusantium dolorem cumque id, enim placeat voluptate atque reprehenderit iure?
+    </p>
+
+    <form action="" id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input type="text" id="name" placeholder="Enter your fullname" required /></label>
+        <label id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Age(optional)<input type="number" id="number" min="13" max="120" placeholder="Your age" /></label>
+
+        <select name="dropdown" id="dropdown">
+          <option value="">Select your language Program</option>
+          <option value="1">Javascript</option>
+          <option value="2">Python</option>
+          <option value="3">C++</option>
+        </select>
+
+        <label for="personal-account"><input value="1" id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+
+        <label for="business-account"><input value="2" id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="1" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="2" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+
+        <label for="message"
+          >Provide a bio:
+          <textarea id="message" name="message" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+
+        <!-- ? button submit -->
+        <input type="submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

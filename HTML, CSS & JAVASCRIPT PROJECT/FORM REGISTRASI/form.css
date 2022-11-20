@@ -1,0 +1,94 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
+}
+
+/* ? CATATAN FLEX-DIRECTION
+/* Flexbox has a main and cross axis. The main axis is defined by the flex-direction property, which has four possible values:
+
+row (default): horizontal axis with flex items from left to right
+row-reverse: horizontal axis with flex items from right to left
+column: vertical axis with flex items from top to bottom
+column-reverse: vertical axis with flex items from bottom to top
+Note: The axes and directions will be different depending on the text direction. The values shown are for a left-to-right text direction.
+
+Try the different values to see how they affect the layout. */
+
+/* When you are done, set an explicit flex-direction of row on the .gallery element.  */
+
+/* ? catatan pseudoclass css */
+/* ? The ::after pseudo-element creates an element that is the last child of the selected element. You can use it to add an empty element after the last image. If you give it the same width as the images it will push the last image to the left when the gallery is in a two-column layout. Right now, it is in the center because you set justify-content: center on the flex container. */

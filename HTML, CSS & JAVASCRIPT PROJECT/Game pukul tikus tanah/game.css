@@ -1,0 +1,60 @@
+h1,
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+}
+
+.container {
+  width: 600px;
+  /* height: 300px; */
+  margin: auto;
+  border: 1px solid black;
+  /* background-color: aqua; */
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+.tanah {
+  width: 200px;
+  height: 200px;
+  /* background-color: black; */
+  /* ? tambah overflow hidden agar setiap yang lewat div tanah menjadi tdk terlihat */
+  overflow: hidden;
+  position: relative;
+  /* ? agar tanah ke kiri pakai float */
+  float: left;
+}
+
+/* ? buat wadah tanah di depan tikus */
+.tanah::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(img/tanah.jpg) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -20px;
+}
+
+/* ? buat si tikus di tengah" tanah */
+.tikus {
+  /* * lebar dan tinggi sesuai tanah */
+  width: 100%;
+  height: 100%;
+  background: url(img/tikus1.jpg) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 120px;
+  transition: top 0.3s;
+}
+
+/* ? jika tanah yang dikasih class muncul,maka tikus didalamnya akan */
+.tanah.muncul .tikus {
+  top: -20px;
+}

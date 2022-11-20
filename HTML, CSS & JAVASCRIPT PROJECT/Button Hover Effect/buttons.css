@@ -1,0 +1,92 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-column: auto auto;
+  gap: 20px;
+  place-content: center;
+  background: #000000;
+}
+
+button {
+  position: relative;
+  border: none;
+  transition: 0.4s ease-in;
+  z-index: 1;
+}
+
+button::before,
+button::hover {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-1:hover {
+  box-shadow: inset -10.5em 0 0 0 blue, inset 10.5em 0 0 0 cyan;
+}
+/* .btn-1:hover::after {
+  width: 100%;
+} */
+
+.btn-2::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  transition-duration: 0.8s;
+  width: 100%;
+}
+
+.btn-2:hover::after {
+  height: 100%;
+  box-shadow: violet;
+}
+
+.btn-3:hover {
+  background: red;
+  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
+}
+
+.btn-5::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 125%;
+}
+
+.btn-7:hover {
+  border: 2px solid green;
+  color: green;
+  background-color: #17181c;
+}
+
+.btn-4 {
+  --b: 3px;
+  --s: 0.15em;
+  --c: #bd5532;
+  padding: calc(0.05em + var(--s)) calc(0.3em + var(--s));
+  color: var(--c);
+  --_p: var(--s);
+  transition: 0.4s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #000;
+  outline-offset: 0.2em;
+}
+
+.btn-4:hover,
+.btn-4:focus-visible {
+  --_p: 0;
+  outline-color: var(--c);
+  outline-offset: 0.05em;
+}
+.btn-4:active {
+  background: var(--c);
+  color: #fff;
+}

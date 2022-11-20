@@ -1,0 +1,59 @@
+/* #back {
+  background-image: url("img/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  min-height: 200vh;
+  max-width: 200px;
+} */
+/* body {
+  background: black;
+} */
+
+/* ? blob Effect */
+div {
+  /* margin: 100px; */
+  position: absolute;
+  height: 400px;
+  width: 440px;
+  clip-path: url("#blob");
+  animation-name: rotateRight;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+div img {
+  height: 500px;
+  width: 540px;
+  position: relative;
+  top: -50px;
+  left: -50px;
+  transform: translate(-50px, -50px);
+  object-fit: cover;
+  object-position: center;
+  animation-name: rotateLeft;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateRight {
+  from {
+    transform: rotate (0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

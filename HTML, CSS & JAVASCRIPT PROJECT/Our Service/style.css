@@ -1,0 +1,93 @@
+.service-grid {
+  background: #fcfcfc;
+}
+
+.service-title h4 {
+  position: relative;
+  display: inline-block;
+}
+
+.service-icon {
+  position: relative;
+}
+
+.service-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.about-info-text h2 {
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-weight: 0.9;
+}
+.about-info-text p {
+  padding: 0 100px;
+  font-size: 20px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.about-content p {
+  margin-bottom: 0;
+}
+.about-info-text a {
+  margin-bottom: 20px;
+  position: relative;
+}
+.service-icon i {
+  font-size: 40px;
+  color: #e8bc00;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.service-wrap {
+  border: 1px solid #e6e6e6;
+  padding: 50px 30px;
+  position: relative;
+}
+
+.service-wrap p {
+  position: relative;
+}
+
+.service-wrap:hover {
+  background-image: url(https://source.unsplash.com/1600x900/?nature);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
+  transition: all 0.5s;
+}
+
+.service-wrap:hover:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.29);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.service-wrap:hover h4,
+.service-wrap:hover p {
+  color: #fff;
+}
+
+.service-wrap h4 {
+  font-weight: 600;
+  color: #1e2331;
+  margin-bottom: 17px;
+  font-size: 18px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.service-wrap a {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
